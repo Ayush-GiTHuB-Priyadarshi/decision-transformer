@@ -1,5 +1,3 @@
-"Recreate the environment using conda env create -f environment.yml"
-
 name: decision-transformer-gym-py39
 channels:
   - pytorch
@@ -8,6 +6,10 @@ channels:
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
 dependencies:
+  - python=3.9
+  - pip=25.0.1
+  - pip:
+    - -r pip_packages.txt
   - _anaconda_depends=2025.03=py39_openblas_0
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
